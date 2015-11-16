@@ -27,9 +27,9 @@ namespace Persons
                 persons.Add(new Person("Vanko2", 29));
                 //persons.Add(new Person("Dragan", 129));
                 //persons.Add(new Person("Iliyan", 33, "invalidEmail"));
-                //persons.Add(new Person("Peter", 0, "peter@baby.com"));
+                persons.Add(new Person("Peter", 0, "peter@baby.com"));
             }
-            catch (Exception ex)
+            catch (ArgumentException ex)
             {
                 Console.WriteLine("Cannot create person object: " + ex.Message);
             }
